@@ -1,0 +1,266 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.nav{
+  padding: 13px 0px;
+  justify-content: space-around;
+}
+.logo{
+  max-width: 100px;
+  color: #ffffff;
+}
+.menu-list{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+} 
+.menu-items :hover{
+  color: orangered;
+  /* border-bottom: 2px solid orangered; */
+  /* transition: 3s cubic-bezier(0.215, 0.610, 0.355, 1); */
+}
+.menu-items{
+  top: 100px;
+}
+.section{
+  position: relative;
+  padding: 80px 0;
+}
+.theme-padding{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.dark{
+  color: #ffffff;
+}
+.section-title{
+  margin-bottom: 20px;
+}
+.section-title h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+.section-text
+{
+margin-top: 80px;
+}
+/* bannner */
+.banner{
+  background-attachment: fixed;
+}
+.banner-text {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: 0;
+right: 0;
+margin: 0 auto;
+text-align: center;
+}
+
+.section-banner 
+{
+position: relative;
+}
+/*about*/
+.section-text .subtitle
+{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 2px;
+}
+/* project */
+.project-list ul li {
+line-height: 40px;
+letter-spacing: 0.1em;
+font-size: 12px;
+list-style-type: square;
+margin-left: 20px;
+}
+/*  */
+.responsive-btn{
+display: none;
+}
+@media screen and (max-width: 1024px) {
+.responsive-btn{
+  display: block;
+  margin-left: auto;
+}
+.menu-list {
+  position: absolute;
+  top: 130px;
+  z-index: 11;
+  background-color: #fff;
+  margin: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  gap: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.menu-items {
+  padding: 15px 30px;
+}
+
+.nav {margin: 0 !important;}
+
+.menu-list {
+  top: 90px;
+}
+.menu-list.is-active {
+  opacity: 1;
+  visibility: visible;
+  top: 96px;
+  transition: all 0.5s linear;
+}
+.section-text
+{
+margin-top: 10px;
+}
+.project-list ul li {
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  list-style-type: square;
+  margin-left: 20px;
+  }
+  .section-title{
+    margin-bottom: 2px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width:768px)
+{
+  .menu-list{
+      display: flex;
+      flex-direction: column;
+  }  
+  .nav{
+    padding: 13px 30px;
+  }
+  .theme-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section{
+    padding: 20px 0px;
+
+  }
+  footer{
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-text h2{
+    line-height: 29px;
+    font-size: 20px;
+  }
+  .section-title{
+    padding: 0px 20px;
+  }
+  .section .subtitle {
+    padding: 0px 20px;
+  }
+  .project-text ul li{
+    line-height: 0px;
+    padding: 0px 20px;
+    line-height: 0%;
+    font-size: 1px;
+  }
+ 
+  footer{
+    background: #DCD8D0;
+    padding: 0px 40px;
+    font-family: Roboto;
+  }
+}
+.floorplans h2{
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 58.51px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  float: left;
+}
+.splide__slide img {
+  width: 50%;
+  /* height: 100%; */
+  object-fit: contain;
+
+}
+footer{
+  background: #DCD8D0;
+  padding: 40px 0px; 
+  font-family: Roboto;
+}
+footer strong{
+  color: orangered;
+}
+.disclaimer{
+  font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+}
+.footer-disclaimer{
+  font-size: 14px;
+}
+ 
+footer .last{
+  font-size: 12px;
+}
+.footer-items {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+span {
+  white-space: nowrap;
+  color: orangered;
+  font-weight: 700;
+}
+.footer-items a {
+  display: block;
+  color: #000;
+}
+
+.footer-items a:hover {
+  color: orangered;
+ 
+}
+.project-items li{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.164);
+  gap: 60px;
+  padding-top: 30px;
+}
+.footer-logo{
+  float: right;
+}
+table{
+  padding-left: 90px;
+}
+td{
+  gap: 50px;
+
+}

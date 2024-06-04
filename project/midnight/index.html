@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.1/css/bulma.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="columns nav is-vcentered is-mobile ">
+          <div class="column is-4-mobile is-4-tablet is-4-desktop is-4-widescreen">
+            <div class="logo">
+              <picture>
+                <img src="images/logo.png" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="column is-8-mobile is-8-tablet is-8-desktop is-8-widescreen">
+            <span class="icon is-dark mdi mdi-dark responsive-btn" onclick="menutToggle()">
+              <ion-icon name="menu-outline"></ion-icon>
+            </span>
+            <ul class="menu-list">
+              <li class="menu-items"> <a href="">About us</a> </li>
+              <li class="menu-items"> <a href="">Highlights</a> </li>
+              <li class="menu-items"> <a href="">Ameneties</a> </li>
+              <li class="menu-items"> <a href="">Connectivity</a> </li>
+              <li class="menu-items"> <a href="">Image Gallery</a> </li>
+              <li class="menu-items"> <a href="">About The Developer</a> </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </nav>
+  </header>
+  <!--  -->
+  <section id="section-banner" class="section section-banner p-0 ">
+    <div class="banner-img">
+      <picture>
+        <img src="images/banner/banner.jpg" alt="banner">
+      </picture>
+    </div>
+    <div class="banner-text">
+      <div class="section-title">
+        <h2 class="dark">Modern Living: <br>
+          The Apartment Complex </h2>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="section-about" class="section section-about">
+    <div class="theme-padding">
+      <div class="columns is-multiple mb-6">
+        <div class="column is-3-mobile is-4-tablet is-3-desktop is-3-widesceen">
+          <div class="section-title">
+            <h2>
+              About The Project
+            </h2>
+          </div>
+        </div>
+        <div class="column is-12-mobile is-8-tablet is-9-desktop is-8-widesceen">
+          <p class="subtitle">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. <br><br>
+            Kendale Developers has taken great steps to transform Badlapur's infrastructure into that of a metropolitan
+            town. Codename Malabar Hill is built with passion and dedication, spanning over 2,70,000 square feet .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="theme-padding pr-0">
+      <div class="about-img">
+        <picture>
+          <img src="images/about.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="section-project1" class="section section-project">
+    <div class="columns ">
+      <div class="column is-5">
+        <div class="theme-padding">
+          <div class="project-img">
+            <picture class="image">
+              <img src="images/project highlight.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="column is-5">
+        <div class="section-title">
+          <h2>Project Highlights</h2><br>
+        </div>
+        <div class="project-list">
+          <ul class="project-items">
+            <li>
+              Bungalow options to select from - Studio/1BHK/ 2BHK/3 BHK and above
+            </li>
+            <li>
+              Access to Clubhouse with Swimming Pool and other recreational amenities
+            </li>
+            <li>
+              Close proximity to Nalsarovar bird sanctuary
+            </li>
+            <li>
+              Property management & maintenance service
+            </li>
+            <li>
+              Access to one of the finest 18 Hole, Par 72 Jeev Milkha Singh Signature Golf Course
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="section-ameneties" class="section section-ameneties">
+    <div class="theme-padding pr-0">
+      <div class="columns">
+        <div class="column is-5">
+          <div class="section-text">
+            <div class="section-title">
+              <h2 style="text-align: left;">Amenities</h2><br>
+            </div>
+            <div class="section-para">
+              <p class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has
+                been the
+                industry's standard dummy text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/ameneties1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/ameneties1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/ameneties1.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="section-gallery" class="section section-gallery">
+    <div class="theme-padding pl-0">
+      <div class="columns">
+        <div class="column">
+          <section id="image-carousel1" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/gallery.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/gallery.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/gallery.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="column is-5 connectivity-text">
+          <div class="section-text">
+            <div class="section-title">
+              <h2 style="text-align: left;">Gallery</h2><br>
+            </div>
+            <div class="section-para">
+              <p class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="section-connectivity" class="section section-connectivity">
+    <div class="theme-padding pr-0">
+      <div class="columns">
+        <div class="column is-5 ">
+          <div class="section-text">
+            <div class="section-title">
+              <h2 style="text-align: left;">Connectivity</h2><br>
+            </div>
+            <div class="section-para">
+              <p class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <section id="image-carousel2" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="images/connectivity.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/connectivity.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="images/connectivity.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <div id="section-floorplans" class="section section-floorplans">
+    <div class="theme-padding pr-0">
+      <div class="columns">
+        <div class="column is-6">
+          <div class="section-title">
+            <h2>Floor Plans</h2>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <picture>
+            <img src="images/floor.jpg" alt="">
+          </picture>
+        </div>
+        <div class="column">
+          <picture>
+            <img src="images/floor.jpg" alt="">
+          </picture>
+        </div>
+        <div class="column">
+          <picture>
+            <img src="images/floor.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <section id="section-about-the-developer" class="section section-about-the-developer">
+    <div class="theme-padding pr-0">
+      <picture>
+        <img src="images/about the developer.jpg" alt="">
+      </picture>
+    </div>
+    <div class="theme-padding">
+      <div class="columns">
+        <div class="column is-4 ">
+          <div class="section-title">
+            <h2 style="float: left; margin-top: 40px;">
+              <blockquote>About
+                The Developer</blockquote>
+            </h2>
+          </div>
+        </div>
+        <div class="column is-8">
+          <div class="section-para">
+            <p class="subtitle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+              to
+              make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. <br><br>
+              Kendale Developers has taken great steps to transform Badlapur's infrastructure into that of a
+              metropolitan
+              town. Codename Malabar Hill is built with passion and dedication, spanning over 2,70,000 square feet .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--  -->
+<div class="columns">
+  <div class="column is-5">
+  <section id="image-carousel122" class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <table>
+            <thead>Education</thead>
+            <tr> 
+              <td>Stonehill International School - 11.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Ryan International School - 12.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+            <tr>
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+          </table>
+        </li>
+        <li class="splide__slide">
+          <table>
+            <thead>Education</thead>
+            <tr> 
+              <td>Stonehill International School - 11.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Ryan International School - 12.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+            <tr>
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+          </table>
+        </li>
+        <li class="splide__slide">
+          <table>
+            <thead>Education</thead>
+            <tr> 
+              <td>Stonehill International School - 11.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Ryan International School - 12.7 Km</td>
+            </tr>
+            <tr> 
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+            <tr>
+              <td>Canadian International - 13.6 Km</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="column is-8-mobile is-8-tablet is-8-desktop is-8-widescreen">
+          <div class="footer-items">
+            <span>Site Address :</span>
+            <p>Imagine your own oasis overflowing with luxury and natural
+              beauty Crystal-clear water.</p>
+          </div>
+          <div class="footer-items">
+            <h6>Contact Us :</h6>
+            <p>
+              <a href="tel:000000000">000000000</a>
+              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="column  column is-4-mobile is-4-tablet is-4-desktop is-4-widescreen">
+          <picture class="footer-logo">
+            <img src="images/logo.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="columns ">
+        <!-- <div class="column ">
+          <div class="footer-items maharere">
+            <spa>Maha Rera No :</spa>
+            <img src="images/scanner.jpg" alt="">
+            <p class="content">
+              <a href=""> P51800033931</a>
+              <a href=""> website-https://maharerait.mahaonline.gov.in</a>
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="footer-items footer-disclaimer">
+            <span>Disclaimer:</span>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+              obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+              in
+              classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+              1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC.
+              This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line
+              of
+              Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          </div>
+        </div>
+      </div>
+      <div class="columns last ">
+        <div class="column pt-0 pb-0">
+          <p>privacy policy</p>
+        </div>
+        <div class="column pt-0 pb-0">
+          <p>© 2023 All Rights Reserved by xyz | Powered by Insomniacs</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function menutToggle() {
+      let menulist = document.querySelector('.menu-list');
+      menulist.classList.toggle("is-active");
+    }
+
+    // function slider() {
+    //   menu.classList.toggle('')
+    // }
+    // let slide = document.querySelector('.menutoggle')
+    // function slider() {
+    //   slide.classList.toggle("open-menu")
+    // }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel', {
+        cover: true,
+        heightRatio: 0.5,
+        type: 'loop',
+        perPage: 1,
+      }).mount();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel1', {
+        cover: true,
+        heightRatio: 0.5,
+        type: 'loop',
+        perPage: 1,
+      }).mount();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel2', {
+        cover: true,
+        heightRatio: 0.5,
+        type: 'loop',
+        perPage: 1,
+       
+      }).mount();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel122', {
+        cover: true,
+        heightRatio: 0.5,
+        type: 'loop',
+        perPage: 1,
+      }).mount();
+    });
+  </script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
